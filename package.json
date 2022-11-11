@@ -1,0 +1,20 @@
+{
+  "name": "@wk/root",
+  "private": true,
+  "npmClient": "yarn",
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "start": "lerna run start --scope=@wk/web",
+    "start:vendo-app": "lerna run dev --scope=@wk/app"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "craco": "^0.0.3",
+    "lerna": "^5.6.1"
+  }
+}
